@@ -8,11 +8,18 @@ public class Aspirant extends Student {
 
     private String scienceWork;
 
-    public Aspirant(String group, String lastName, String firstName, String scienceWork) {
-        super(group, lastName, firstName);
+    public Aspirant(String group, String lastName, String firstName, String scienceWork,double avg) {
+        super(group, lastName, firstName,avg);
         this.scienceWork = scienceWork;
     }
 
+    public int getScholarship() {
+        if (getAvg() == 5) {
+            return 200;
+        } else {
+            return 180;
+        }
+    }
     public String getScienceWork() {
         return scienceWork;
     }
