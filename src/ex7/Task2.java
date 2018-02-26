@@ -1,4 +1,4 @@
-package ex6;
+package ex7;
 
 public class Task2 {
     public static void main(){

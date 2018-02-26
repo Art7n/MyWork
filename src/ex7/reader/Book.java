@@ -1,4 +1,4 @@
-package ex6.reader;
+package ex7.reader;
 
 public class Book {
     public String getBookName() {

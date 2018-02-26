@@ -1,4 +1,4 @@
-package ex6.reader;
+package ex7.reader;
 
 public class LibraryDemo {
     public static void main(String args[]) {

@@ -1,4 +1,4 @@
-package ex6.person;
+package ex7.person;
 
 public class Person {
     private String fullName;

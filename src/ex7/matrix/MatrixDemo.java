@@ -1,4 +1,4 @@
-package ex6.matrix;
+package ex7.matrix;
 
 public class MatrixDemo {
     public static void main(String args[]) {

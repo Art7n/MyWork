@@ -1,4 +1,4 @@
-package ex6.phone;
+package ex7.phone;
 
 public class Phone {
     private String number;
