@@ -10,10 +10,9 @@ public class Task4 {
     public static void main(String[] args) {
         System.out.println("Введите 2 числа : ");
         Scanner scan1 = new Scanner(System.in);
-        Scanner scan2 = new Scanner(System.in);
-        if (scan1.hasNextInt() && scan2.hasNextInt()) {
+        if (scan1.hasNextInt() && scan1.hasNextInt()) {
             int a1 = scan1.nextInt();
-            int a2 = scan2.nextInt();
+            int a2 = scan1.nextInt();
             System.out.println("Их сумма: " + a1 + " + " + a2 + " = " + (a1 + a2) + "\n" +
                     "Их разность: " + a1 + " - " + a2 + " = " + (a1 - a2) + "\n" +
                     "Их произведение: " + a1 + " * " + a2 + " = " + (a1 * a2) + "\n" +
