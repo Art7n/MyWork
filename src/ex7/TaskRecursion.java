@@ -3,24 +3,32 @@ package ex7;
 import java.util.Scanner;
 
 public class TaskRecursion {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         if (sc.hasNextInt()) {
             final int A = sc.nextInt();
             final int B = sc.nextInt();
-            if (A < B) {
-                rec(A,B,0);
-            }else{
-                rec(B,A,0);
-            }
+            rec1(A, B, 0);
         }
     }
 
-    public int rec(int A, int B, int n) {
-        if (n != B - A) {
-            System.out.print(A + n++ + " ");
-            return rec(A,B,n);
+    public static int rec1(int A, int B, int n) {
+        if (A < B) {
+            if (n != B - A) {
+                System.out.print(A + n++ + " ");
+                return rec1(A, B, n);
+            } else {
+                System.out.print(A + n + " ");
+                return 0;
+            }
+        } else {
+            if (n != A - B) {
+                System.out.print(A - n++ + " ");
+                return rec1(A, B, n);
+            } else {
+                System.out.print(A - n + " ");
+                return 0;
+            }
         }
-        else return 0;
     }
 }
